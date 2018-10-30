@@ -1,0 +1,900 @@
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#> .
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#> rdf:type :Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#author
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#author> rdf:type :ObjectProperty ,
+                                                                                           :TransitiveProperty ;
+                                                                                  
+                                                                                  :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#citation> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#hasIssueWith> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentedOnBy> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefinedBy> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefining> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribedBy> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussedBy> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentionedBy> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isTakenIssueWithBy> ,
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> ;
+                                                                                  
+                                                                                  rdfs:subPropertyOf :topObjectProperty ;
+                                                                                  
+                                                                                  rdfs:range <https://schema.org/CreativeWork> ;
+                                                                                  
+                                                                                  rdfs:domain <https://schema.org/Person> ;
+                                                                                  
+                                                                                  :propertyDisjointWith <https://schema.org/citedBy> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#citation
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#citation> rdf:type :ObjectProperty ,
+                                                                                             :TransitiveProperty ;
+                                                                                    
+                                                                                    rdfs:domain <https://schema.org/CreativeWork> ;
+                                                                                    
+                                                                                    rdfs:range <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#hasIssueWith
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#hasIssueWith> rdf:type :ObjectProperty ,
+                                                                                                 :TransitiveProperty ;
+                                                                                        
+                                                                                        rdfs:range <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> ;
+                                                                                        
+                                                                                        :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefinedBy> ,
+                                                                                                              <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isTakenIssueWithBy> ;
+                                                                                        
+                                                                                        rdfs:domain <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentedOnBy
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentedOnBy> rdf:type :ObjectProperty ,
+                                                                                                    :TransitiveProperty ;
+                                                                                           
+                                                                                           :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> ;
+                                                                                           
+                                                                                           :inverseOf <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> ;
+                                                                                           
+                                                                                           :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefining> ,
+                                                                                                                 <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> ,
+                                                                                                                 <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> ,
+                                                                                                                 <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> ;
+                                                                                           
+                                                                                           rdfs:range <https://schema.org/CreativeWork> ;
+                                                                                           
+                                                                                           rdfs:domain <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> rdf:type :ObjectProperty ,
+                                                                                                   :TransitiveProperty ;
+                                                                                          
+                                                                                          :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefinedBy> ,
+                                                                                                                <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribedBy> ,
+                                                                                                                <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussedBy> ,
+                                                                                                                <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentionedBy> ,
+                                                                                                                <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isTakenIssueWithBy> ;
+                                                                                          
+                                                                                          rdfs:range <https://schema.org/CreativeWork> ;
+                                                                                          
+                                                                                          rdfs:domain <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefinedBy
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefinedBy> rdf:type :ObjectProperty ,
+                                                                                                :TransitiveProperty ;
+                                                                                       
+                                                                                       rdfs:domain <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> ;
+                                                                                       
+                                                                                       :inverseOf <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefining> ;
+                                                                                       
+                                                                                       :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefining> ,
+                                                                                                             <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> ,
+                                                                                                             <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> ,
+                                                                                                             <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> ;
+                                                                                       
+                                                                                       rdfs:range <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefining
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefining> rdf:type :ObjectProperty ,
+                                                                                               :TransitiveProperty ;
+                                                                                      
+                                                                                      rdfs:range <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> ;
+                                                                                      
+                                                                                      :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribedBy> ,
+                                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussedBy> ,
+                                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentionedBy> ,
+                                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isTakenIssueWithBy> ;
+                                                                                      
+                                                                                      rdfs:domain <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribedBy
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribedBy> rdf:type :ObjectProperty ,
+                                                                                                  :TransitiveProperty ;
+                                                                                         
+                                                                                         rdfs:domain <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> ;
+                                                                                         
+                                                                                         :inverseOf <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> ;
+                                                                                         
+                                                                                         :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> ,
+                                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> ,
+                                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> ;
+                                                                                         
+                                                                                         rdfs:range <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> rdf:type :ObjectProperty ,
+                                                                                                 :TransitiveProperty ;
+                                                                                        
+                                                                                        rdfs:range <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> ;
+                                                                                        
+                                                                                        :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussedBy> ,
+                                                                                                              <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentionedBy> ,
+                                                                                                              <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isTakenIssueWithBy> ;
+                                                                                        
+                                                                                        rdfs:domain <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussedBy
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussedBy> rdf:type :ObjectProperty ,
+                                                                                                  :TransitiveProperty ;
+                                                                                         
+                                                                                         rdfs:domain <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> ;
+                                                                                         
+                                                                                         :inverseOf <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> ;
+                                                                                         
+                                                                                         :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> ,
+                                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> ;
+                                                                                         
+                                                                                         rdfs:range <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> rdf:type :ObjectProperty ,
+                                                                                                 :TransitiveProperty ;
+                                                                                        
+                                                                                        rdfs:range <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> ;
+                                                                                        
+                                                                                        :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentionedBy> ,
+                                                                                                              <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isTakenIssueWithBy> ;
+                                                                                        
+                                                                                        rdfs:domain <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentionedBy
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentionedBy> rdf:type :ObjectProperty ,
+                                                                                                  :TransitiveProperty ;
+                                                                                         
+                                                                                         rdfs:domain <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> ;
+                                                                                         
+                                                                                         :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> ;
+                                                                                         
+                                                                                         :inverseOf <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> ;
+                                                                                         
+                                                                                         rdfs:domain <https://schema.org/CreativeWork> ;
+                                                                                         
+                                                                                         rdfs:range <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> rdf:type :ObjectProperty ,
+                                                                                                 :TransitiveProperty ;
+                                                                                        
+                                                                                        rdfs:range <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> ;
+                                                                                        
+                                                                                        :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isTakenIssueWithBy> ;
+                                                                                        
+                                                                                        rdfs:domain <https://schema.org/CreativeWork> ;
+                                                                                        
+                                                                                        rdfs:range <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isTakenIssueWithBy
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isTakenIssueWithBy> rdf:type :ObjectProperty ,
+                                                                                                       :TransitiveProperty ;
+                                                                                              
+                                                                                              rdfs:domain <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> ;
+                                                                                              
+                                                                                              :inverseOf <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#hasIssueWith> ;
+                                                                                              
+                                                                                              rdfs:range <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> rdf:type :ObjectProperty ,
+                                                                                              :TransitiveProperty ;
+                                                                                     
+                                                                                     :inverseOf <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#author> ;
+                                                                                     
+                                                                                     rdfs:domain <https://schema.org/CreativeWork> ;
+                                                                                     
+                                                                                     rdfs:range <https://schema.org/Person> .
+
+
+
+###  https://schema.org/citedBy
+
+<https://schema.org/citedBy> rdf:type :ObjectProperty ,
+                                      :TransitiveProperty ;
+                             
+                             :inverseOf <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#citation> .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#birthDate
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#birthDate> rdf:type :DatatypeProperty ,
+                                                                                              :FunctionalProperty ;
+                                                                                     
+                                                                                     :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> ,
+                                                                                                           <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> ,
+                                                                                                           <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> ;
+                                                                                     
+                                                                                     rdfs:range xsd:dateTime ;
+                                                                                     
+                                                                                     rdfs:domain <https://schema.org/Person> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> rdf:type :DatatypeProperty ,
+                                                                                                  :FunctionalProperty ;
+                                                                                         
+                                                                                         :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#familyName> ,
+                                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#givenName> ;
+                                                                                         
+                                                                                         rdfs:range xsd:dateTime ;
+                                                                                         
+                                                                                         rdfs:subPropertyOf :topDataProperty ;
+                                                                                         
+                                                                                         rdfs:domain <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#familyName
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#familyName> rdf:type :DatatypeProperty ;
+                                                                                      
+                                                                                      :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> ,
+                                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> ;
+                                                                                      
+                                                                                      rdfs:range xsd:string ;
+                                                                                      
+                                                                                      rdfs:domain <https://schema.org/Person> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#givenName
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#givenName> rdf:type :DatatypeProperty ;
+                                                                                     
+                                                                                     :propertyDisjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> ,
+                                                                                                           <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> ;
+                                                                                     
+                                                                                     rdfs:range xsd:string ;
+                                                                                     
+                                                                                     rdfs:domain <https://schema.org/Person> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> rdf:type :DatatypeProperty ;
+                                                                                
+                                                                                rdfs:domain <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> ;
+                                                                                
+                                                                                rdfs:range xsd:string ;
+                                                                                
+                                                                                rdfs:domain <https://schema.org/CreativeWork> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> rdf:type :DatatypeProperty ,
+                                                                                                   :FunctionalProperty ;
+                                                                                          
+                                                                                          rdfs:range xsd:string ;
+                                                                                          
+                                                                                          rdfs:domain <https://schema.org/CreativeWork> .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Field
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Field> rdf:type :Class ;
+                                                                                 
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_ethics
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_ethics> rdf:type :Class ;
+                                                                                                
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Field> ;
+                                                                                                
+                                                                                                :disjointWith <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_language> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_language
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_language> rdf:type :Class ;
+                                                                                                  
+                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Field> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Subject> rdf:type :Class ;
+                                                                                   
+                                                                                   rdfs:subClassOf :Thing ;
+                                                                                   
+                                                                                   :disjointWith <https://schema.org/CreativeWork> ,
+                                                                                                 <https://schema.org/Person> .
+
+
+
+###  https://schema.org/Article
+
+<https://schema.org/Article> rdf:type :Class ;
+                             
+                             rdfs:subClassOf <https://schema.org/CreativeWork> ;
+                             
+                             :disjointWith <https://schema.org/Book> .
+
+
+
+###  https://schema.org/Book
+
+<https://schema.org/Book> rdf:type :Class ;
+                          
+                          rdfs:subClassOf <https://schema.org/CreativeWork> .
+
+
+
+###  https://schema.org/CreativeWork
+
+<https://schema.org/CreativeWork> rdf:type :Class ;
+                                  
+                                  :disjointWith <https://schema.org/Person> .
+
+
+
+###  https://schema.org/Person
+
+<https://schema.org/Person> rdf:type :Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Alice_Crary
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Alice_Crary> rdf:type :NamedIndividual ,
+                                                                                                <https://schema.org/Person> ;
+                                                                                       
+                                                                                       <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#birthDate> "1967-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                       
+                                                                                       <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#givenName> "Alice"^^xsd:string ;
+                                                                                       
+                                                                                       <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#familyName> "Grary"^^xsd:string ;
+                                                                                       
+                                                                                       <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#author> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#The_New_Wittgenstein> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Deidre_Smith
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Deidre_Smith> rdf:type :NamedIndividual ,
+                                                                                                 <https://schema.org/Person> ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#birthDate> "1964-00-00T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#givenName> "Deidre"^^xsd:string ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#familyName> "Smith"^^xsd:string ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#author> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Rediscovering_Wittgenstein> ,
+                                                                                                                                                                          <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Games
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Games> rdf:type <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_language> ,
+                                                                                          :NamedIndividual ;
+                                                                                 
+                                                                                 <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Games"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#George_Eugene_Moore
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#George_Eugene_Moore> rdf:type :NamedIndividual ,
+                                                                                                        <https://schema.org/Person> ;
+                                                                                               
+                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#birthDate> "1920-02-22T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                               
+                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#givenName> "George Eugene"^^xsd:string ;
+                                                                                               
+                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#familyName> "Moore"^^xsd:string ;
+                                                                                               
+                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#author> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Principia_Ethica> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Janyne_Sattler
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Janyne_Sattler> rdf:type :NamedIndividual ,
+                                                                                                   <https://schema.org/Person> ;
+                                                                                          
+                                                                                          <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#givenName> "Janyne"^^xsd:string ;
+                                                                                          
+                                                                                          <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#familyName> "Sattler"^^xsd:string ;
+                                                                                          
+                                                                                          <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#author> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Moral_Judgements> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Life
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Life> rdf:type <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_ethics> ,
+                                                                                         :NamedIndividual ;
+                                                                                
+                                                                                <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Life"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Limits
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Limits> rdf:type <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_language> ,
+                                                                                           :NamedIndividual ;
+                                                                                  
+                                                                                  <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Limits"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Ludwig_Wittgenstein
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Ludwig_Wittgenstein> rdf:type :NamedIndividual ,
+                                                                                                        <https://schema.org/Person> ;
+                                                                                               
+                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#birthDate> "1889-04-26T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                               
+                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#givenName> "Ludwig"^^xsd:string ;
+                                                                                               
+                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#familyName> "Wittgenstein"^^xsd:string ;
+                                                                                               
+                                                                                               <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#author> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Metaphysical
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Metaphysical> rdf:type <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_ethics> ,
+                                                                                                 :NamedIndividual ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Metaphysical"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Moral_Judgements
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Moral_Judgements> rdf:type :NamedIndividual ,
+                                                                                                     <https://schema.org/Article> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> "2010-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> "Montréal, Canada"^^xsd:string ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Moral Judgments as Part of What Ethics Must Show"^^xsd:string ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Janyne_Sattler> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Life> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Life> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Life> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Limits> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Limits> ,
+                                                                                                                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Metaphysical> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#citation> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> ,
+                                                                                                                                                                                      <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Notebooks> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#citation> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Notebooks> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Notebooks> ,
+                                                                                                                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Psychological> ,
+                                                                                                                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Tractatus> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#citation> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Tractatus> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Tractatus> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> rdf:type :NamedIndividual ,
+                                                                                             <https://schema.org/Article> ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> "1929-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> "Cambridge, England"^^xsd:string ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Wittgenstein Nachlass TS 207 (Lecture on Ethics): A transcription by the Wittgenstein Archives at the University of Bergen (WAB) [Work in progress] - Normalized edition"^^xsd:string ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Limits> ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Limits> ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Ludwig_Wittgenstein> ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Principia_Ethica> ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Principia_Ethica> ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Simile> ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Simile> ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> ;
+                                                                                    
+                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefining> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Notebooks
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Notebooks> rdf:type :NamedIndividual ,
+                                                                                              <https://schema.org/Book> ;
+                                                                                     
+                                                                                     <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> "1961-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                     
+                                                                                     <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> "New York, USA"^^xsd:string ;
+                                                                                     
+                                                                                     <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Notebooks, 1914-1916"^^xsd:string ;
+                                                                                     
+                                                                                     <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Ludwig_Wittgenstein> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Paul_Formosa
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Paul_Formosa> rdf:type :NamedIndividual ,
+                                                                                                 <https://schema.org/Person> ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#birthDate> "0000-00-00T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#familyName> "Formosa"^^xsd:string ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#givenName> "Paul"^^xsd:string ;
+                                                                                        
+                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#author> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Saying_Unsayable> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophical_Investigations
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophical_Investigations> rdf:type :NamedIndividual ,
+                                                                                                                 <https://schema.org/Book> ;
+                                                                                                        
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> "1953-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                                        
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> "Oxford, United Kingdom"^^xsd:string ;
+                                                                                                        
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Philosophical Investigations"^^xsd:string ;
+                                                                                                        
+                                                                                                        <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Ludwig_Wittgenstein> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Picture_Theory
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Picture_Theory> rdf:type <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_language> ,
+                                                                                                   :NamedIndividual ;
+                                                                                          
+                                                                                          <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Picture theory"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Principia_Ethica
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Principia_Ethica> rdf:type :NamedIndividual ,
+                                                                                                     <https://schema.org/Book> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> "1903-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> "Cambridge, England"^^xsd:string ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Principia Ethica"^^xsd:string ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#George_Eugene_Moore> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Psychological
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Psychological> rdf:type <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_ethics> ,
+                                                                                                  :NamedIndividual ;
+                                                                                         
+                                                                                         <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Psychological"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Rediscovering_Wittgenstein
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Rediscovering_Wittgenstein> rdf:type :NamedIndividual ,
+                                                                                                               <https://schema.org/Article> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> "2007-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> "Bergen, Norway"^^xsd:string ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Rediscovering Wittgenstein"^^xsd:string ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Deidre_Smith> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#citation> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> ;
+                                                                                                      
+                                                                                                      <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophical_Investigations> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Rupert_Read
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Rupert_Read> rdf:type :NamedIndividual ,
+                                                                                                <https://schema.org/Person> ;
+                                                                                       
+                                                                                       <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#birthDate> "1966-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                       
+                                                                                       <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#familyName> "Read"^^xsd:string ;
+                                                                                       
+                                                                                       <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#givenName> "Rupert"^^xsd:string ;
+                                                                                       
+                                                                                       <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#author> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#The_New_Wittgenstein> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Saying_Unsayable
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Saying_Unsayable> rdf:type :NamedIndividual ,
+                                                                                                     <https://schema.org/Article> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> "2007-12-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Saying the Unsayable: Wittgenstein's Early Ethical Thought"^^xsd:string ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> "Spain"^^xsd:string ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Life> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Life> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Life> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Limits> ,
+                                                                                                                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Metaphysical> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Metaphysical> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> ,
+                                                                                                                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Notebooks> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Notebooks> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#citation> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Notebooks> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Paul_Formosa> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Picture_Theory> ,
+                                                                                                                                                                                    <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Psychological> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDescribing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Psychological> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#The_New_Wittgenstein> ,
+                                                                                                                                                                                      <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Tractatus> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#citation> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Tractatus> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Tractatus> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#hasIssueWith> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDefining> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> ;
+                                                                                            
+                                                                                            <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Simile
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Simile> rdf:type <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_language> ,
+                                                                                           :NamedIndividual ;
+                                                                                  
+                                                                                  <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Simile"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#The_New_Wittgenstein
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#The_New_Wittgenstein> rdf:type :NamedIndividual ,
+                                                                                                         <https://schema.org/Book> ;
+                                                                                                
+                                                                                                <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> "2000-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                                
+                                                                                                <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> "London, United Kingdom"^^xsd:string ;
+                                                                                                
+                                                                                                <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "The New Wittgenstein"^^xsd:string ;
+                                                                                                
+                                                                                                <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Alice_Crary> ,
+                                                                                                                                                                                     <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Rupert_Read> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Tractatus
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Tractatus> rdf:type :NamedIndividual ,
+                                                                                              <https://schema.org/Book> ;
+                                                                                     
+                                                                                     <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> "1921-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                     
+                                                                                     <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> "Germany"^^xsd:string ;
+                                                                                     
+                                                                                     <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Tractatus Logico-Philosophicus"^^xsd:string ;
+                                                                                     
+                                                                                     <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Ludwig_Wittgenstein> .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> rdf:type <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophy_of_language> ,
+                                                                                          :NamedIndividual ;
+                                                                                 
+                                                                                 <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Value"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development
+
+<http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development> rdf:type :NamedIndividual ,
+                                                                                                                                                                            <https://schema.org/Article> ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#datePublished> "2007-01-01T00:00:00+01:00"^^xsd:dateTime ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#placePublished> "Bergen, Norway"^^xsd:string ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#name> "Ethics, Language and the Development of Wittgenstein’s Thought in Ms 139a"^^xsd:string ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#writtenBy> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Deidre_Smith> ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Life> ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#citation> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Nachlass> ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophical_Investigations> ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isCommentingOn> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Philosophical_Investigations> ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Simile> ,
+                                                                                                                                                                                                                                                           <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Tractatus> ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#hasIssueWith> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isDiscussing> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> ;
+                                                                                                                                                                   
+                                                                                                                                                                   <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#isMentioning> <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#Value> .
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+

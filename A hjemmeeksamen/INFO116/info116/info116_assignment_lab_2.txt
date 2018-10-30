@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+2: <rdf:RDF
+3:    xmlns:ns1="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#"
+4:    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+5: >
+6:   <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#pat">
+7:     <ns1:child rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#chaz"/>
+8:     <ns1:child rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#al"/>
+9:     <ns1:child rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#mo"/>
+10:     <ns1:eyecolor>blue</ns1:eyecolor>
+11:     <ns1:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</ns1:age>
+12:   </rdf:Description>
+13: </rdf:RDF>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/">
+    <dc:title>Primer - Getting into the Semantic Web and RDF using N3</dc:title>
+  </rdf:Description>
+</rdf:RDF>
+
+1: <?xml version="1.0" encoding="UTF-8"?>
+2: <rdf:RDF
+3:    xmlns="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#"
+4:    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+5: >
+6:   <rdf:Description rdf:nodeID="ub79bL1C13">
+7:     <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</age>
+8:   </rdf:Description>
+9:   <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#pat">
+10:     <child rdf:nodeID="ub79bL1C26"/>
+11:     <child rdf:nodeID="ub79bL1C13"/>
+12:   </rdf:Description>
+13:   <rdf:Description rdf:nodeID="ub79bL1C26">
+14:     <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</age>
+15:   </rdf:Description>
+16: </rdf:RDF>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Pat">
+    <rdf:type rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Woman">
+    <rdfs:subClassOf rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#sister">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Person"/>
+    <rdfs:range rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Woman"/>
+  </rdf:Description>
+</rdf:RDF>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Person">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Woman">
+    <owl:sameAs rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/FOOFIGHTERSFemaleAdult"/>
+    <rdfs:subClassOf rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#sister">
+    <rdfs:domain rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:range rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Woman"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Pat">
+    <rdf:type rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Person"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/#Title">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <owl:sameAs rdf:resource="file:///base/data/home/apps/s%7Erdf-translator/1.376065471669087711/FOOFIGHTERStitle"/>
+  </rdf:Description>
+</rdf:RDF>

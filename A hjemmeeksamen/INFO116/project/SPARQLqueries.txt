@@ -1,0 +1,113 @@
+﻿PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://www.semanticweb.org/simen/ontologies/2014/9/infovitFINAL#>
+
+
+1#Displays all possible subjects in BASV-INFO-program
+SELECT  ?subject
+        WHERE {
+        {?subject rdfs:subClassOf :Choice. }
+        UNION
+        {?subject rdfs:subClassOf :Exphil.
+}
+        UNION
+        {?subject rdfs:subClassOf :Introduction.
+    }
+        UNION
+        {?subject rdfs:subClassOf :Specialization.
+    }
+  
+
+2#Which ones has programming
+
+
+SELECT ?subjName
+        WHERE {
+        ?subjName :covers :Programming.
+}
+  
+
+3#Covers databases but NOT querylanguage
+
+
+SELECT ?subjName
+        WHERE { 
+        {?subjName :covers :Database} MINUS {?subjName :covers :Theory}
+}
+  
+
+4#How many groupprojects or mandatoryAssignements
+
+
+SELECT   ?courseName ?groups ?assignments
+        WHERE {
+    {?groups a :GroupProject.
+    ?courseName :has ?groups}
+    UNION
+    {?assignments a :MandatoryAssignments.
+    ?courseName :mustComplete ?assignments
+}
+}
+  
+
+5#Which courses are at autumn
+        
+SELECT ?courseName
+        WHERE {
+                ?courseName :isAt :Autumn .
+        }
+ORDER BY ?courseName
+  
+
+6#Covers any of them both OOP and algorithms
+
+
+SELECT ?subjName
+        WHERE {
+        ?subjName         :covers :Algorithms .
+        ?subjNm :covers :Data-Architecture .
+FILTER (?subjName = ?subjNm)
+}
+  
+
+
+
+7#All courses at spring with 10 studypoints
+
+
+SELECT ?subject
+        WHERE {
+            ?subject :isAt :Spring;
+    :has :STC10.
+        }
+  
+8#Which subject areas do you learn from the course
+
+
+SELECT ?subjArea
+        WHERE {
+        ?subjArea a :Subject-Areas .
+   ?subject :covers ?subjArea.
+FILTER(?subject = :INFO110V15)
+        }
+  
+
+9#All courses that are in English
+
+
+SELECT ?subjName
+        WHERE {
+        ?subjName :is :English .
+        }
+  
+
+10#Which ones has programming at Spring
+
+
+SELECT DISTINCT ?subjName
+        WHERE {
+        {?subjName :covers :Programming} UNION {?subjName :isAt :Spring.}
+}
+ORDER BY ?subjName

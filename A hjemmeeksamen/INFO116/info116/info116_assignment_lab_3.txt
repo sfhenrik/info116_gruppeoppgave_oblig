@@ -1,0 +1,78 @@
+1)	Movies Martin Scorsese has directed.
+
+SELECT  ?movieURI ?movName 
+WHERE {
+?dirURI movie:director_name "Martin Scorsese" .
+?movieURI movie:director ?dirURI .
+?movieURI rdfs:label ?movName .
+}
+
+2)	In alphabetical order
+
+SELECT  ?movieURI ?movName 
+WHERE {
+?dirURI movie:director_name "Martin Scorsese" .
+?movieURI movie:director ?dirURI .
+?movieURI rdfs:label ?movName .
+}
+ORDER BY ?movName (?movieURI)
+
+3) Descending alphabetical order
+
+SELECT  ?movieURI ?movName 
+WHERE {
+?dirURI movie:director_name "Martin Scorsese" .
+?movieURI movie:director ?dirURI .
+?movieURI rdfs:label ?movName .
+}
+ORDER BY ?movName DESC(?movieURI)
+
+
+4) Production designers of Scorsese movies
+
+
+SELECT  ?movieURI ?movName ?prodURI ?prodName
+WHERE {
+?dirURI movie:director_name "Martin Scorsese" .
+?movieURI movie:director ?dirURI  .
+?movieURI movie:film_production_designer ?prodURI .
+?prodURI movie:film_production_designer_name ?prodName  .
+}
+
+5) Count movies per designer
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX oddlinker: <http://data.linkedmdb.org/resource/oddlinker/>
+PREFIX map: <file:/C:/d2r-server-0.4/mapping.n3#>
+PREFIX db: <http://data.linkedmdb.org/resource/>
+PREFIX dbpedia: <http://dbpedia.org/property/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX movie: <http://data.linkedmdb.org/resource/movie/>
+
+SELECT  ?movieURI  ?prodURI ?prodName (count(?prodURI) as ?prodCount)
+WHERE {
+?dirURI movie:director_name "Martin Scorsese" .
+?movieURI movie:director ?dirURI .
+?movieURI movie:film_production_designer ?prodURI .
+?prodURI movie:film_production_designer_name ?prodName .
+
+} 
+
+GROUP BY ?prodURI
+
+
+
+
+6) Other films by the same production designers.
+7) Update graph! Create fictional movie with a writer and a director. Print writer name and director name.
+8) All Sergio Leone movies with Ennio Morricone as composer.
+9) All movies with Ennio Morricone as composer and all were John Williams are composer.
+10) All directors Ennio Morricone has worked with that are not Sergio Leone.
+11) All movies with Ennio Morricone or John Williams as composer, starring Clint Eastwood.
+12) Query nr 4 using reverse(^) match and shorthand(/).
+13) As 4 and 5, but use a service query to find the budget at dbpedia.

@@ -1,0 +1,33 @@
+{
+    "@context": {
+        "schema": "http://schema.org/", 
+        "wit": "http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#",
+        "wit:isCommentingOn": {
+            "@type": "@id"
+        }, 
+        "wit:isMentioning": {
+            "@type": "@id"
+        }, 
+        "schema:author": {
+            "@type": "@id"
+        }, 
+        "schema:citation": {
+            "@type": "@id"
+        }
+    }, 
+    "@id": "wit:Rediscovering_Wittgenstein", 
+    "@type": "schema:Article", 
+    "schema:headline": "Re-Discovering Wittgenstein",
+    "schema:name": "Re-Discovering Wittgenstein",
+    "schema:citation": "wit:Nachlass", 
+    "schema:author": {
+        "@id": "wit:Deidre_Smith", 
+        "@type": "schema:Person", 
+        "schema:name": "Deidre Smith"
+    }, 
+    "wit:isMentioning": [
+        "wit:Nachlass", 
+        "wit:Philosophical_Investigations"
+    ], 
+    "wit:isCommentingOn": "wit:Nachlass"
+}

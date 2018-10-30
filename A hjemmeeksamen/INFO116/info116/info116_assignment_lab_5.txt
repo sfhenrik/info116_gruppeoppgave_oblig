@@ -1,0 +1,67 @@
+<div class="island"> <h2>On iPlayer</h2>      <div class="programme programme--tv programme--episode block-link programme--grid" typeof="Episode" resource="http://www.bbc.co.uk/programmes/b04kf1lh" data-pid="b04kf1lh">   
+
+<div class="programme__img one-whole programme__img--available programme__img--hasimage"> 
+<meta property="image" content="http://ichef.bbci.co.uk/images/ic/480x270/p0276sj1.jpg"> 
+<div class="programme__img-box"><img src="http://ichef.bbci.co.uk/images/ic/192x108/p0276sj1.jpg" alt="" class="rsp-img" data-img-src-208="http://ichef.bbci.co.uk/images/ic/256x144/p0276sj1.jpg" data-img-src-304="http://ichef.bbci.co.uk/images/ic/336x189/p0276sj1.jpg" data-img-src-440="http://ichef.bbci.co.uk/images/ic/480x270/p0276sj1.jpg" data-img-src-576="http://ichef.bbci.co.uk/images/ic/640x360/p0276sj1.jpg"> 
+
+</div>  
+
+<div class="programme__overlay programme__overlay--available">   
+
+<div property="video" typeof="VideoObject"><a property="url" resource="http://www.bbc.co.uk/iplayer/episode/b04kf1lh" href="/iplayer/episode/b04kf1lh" class="programme__availability programme__player iplayer-icon--container" title="1 month left to watch (Sat 15 November 2014, 19:14)" data-linktrack="programmeobjectlink=cta"> <div class="programme__icon br-box-secondary iplayer-icon iplayer-icon--boxed"> 
+
+<i aria-hidden="true" class="gelicon gelicon--iplayer">
+</i> 
+</div> <meta property="name" content="BBC iPlayer">
+</a>
+</div>
+<span property="publication" typeof="OnDemandEvent"><meta property="endDate" datatype="xsd:dateTime" content="2014-11-15T19:14:00+00:00">
+</span>   </div>  </div>   <div class="programme__new micro br-box-secondary br-secondary-bg-onbg080"><span class="centi">New series</span>
+
+</div>   
+
+<div class="programme__body programme__body--flush">    <h4 class="programme__titles"><a property="url" href="/programmes/b04kf1lh" resource="http://www.bbc.co.uk/programmes/programmes/b04kf1lh" class="br-blocklink__link" data-linktrack="programmeobjectlink=title"> 
+<span class="programme__title gamma"> 
+<span property="name">The Caretaker</span> 
+</span>  <span class="hidden">
+—
+</span> 
+<span class="programme__subtitle centi"><span property="partOfSeason" typeof="Season" resource="http://www.bbc.co.uk/programmes/p023w977"><span property="name">
+Series 8
+</span>
+</span></span>  </a></h4>   
+         
+</div> 
+
+<a class="block-link__overlay-link" href="/iplayer/episode/b04kf1lh" data-linktrack="programmeobjectlink=blocklink" aria-hidden="true" tabindex="-1">View Programme</a> 
+
+</div>          
+
+<p><a title="See all Doctor Who episodes available on BBC iPlayer" href="/programmes/b006q2x0/episodes/player" class="istats--all-on-demand">All episodes available on BBC iPlayer</a> <span class="micro nowrap">(1 new / 6 total)</span></p>   
+
+
+
+type: http://schema.org/Person
+
+property: 
+
+	image: http://www.uib.no/imagearchive/Csaba.jpg
+	givenName: Veres
+	firstName: Csaba
+	telephone: 55 58 81 54
+	telephone: 451 41 678
+	email: Csaba.Veres@infomedia.uib.no
+	url:http://csabaveres.net
+
+	affiliation: Universitet i Bergen
+	jobTitle: førsteamensuensis
+	worksFor: Semantiske og sosiale informasjonssystemer
+	worksFor: Institutt for Informasjon- og medievitenskap
+	workLocation: Fosswinckelsgt. 6
+
+	
+
+
+	
+
+
