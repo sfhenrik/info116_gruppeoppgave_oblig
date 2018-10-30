@@ -1,0 +1,1549 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="Field"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Philosophy_of_ethics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Philosophy_of_language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="author"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="citation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasIssueWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCommentedOnBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCommentingOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDefinedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDefining"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDescribedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDescribing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDiscussedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDiscussing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isMentionedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isMentioning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="writtenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/citedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="birthDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="datePublished"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="familyName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="givenName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="placePublished"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Alice_Crary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Deidre_Smith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Games"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="George_Eugene_Moore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Janyne_Sattler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Life"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Limits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Ludwig_Wittgenstein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Metaphysical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Moral_Judgements"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Nachlass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Notebooks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Paul_Formosa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Philosophical_Investigations"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Picture_Theory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Principia_Ethica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Psychological"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Rediscovering_Wittgenstein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Rupert_Read"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Simile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="The_New_Wittgenstein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Tractatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Field"/>
+        <Class IRI="Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Philosophy_of_ethics"/>
+        <Class IRI="Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Philosophy_of_language"/>
+        <Class IRI="Field"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Subject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/Article"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/Book"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Philosophy_of_ethics"/>
+        <Class IRI="Philosophy_of_language"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Subject"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Subject"/>
+        <Class IRI="https://schema.org/Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="https://schema.org/Article"/>
+        <Class IRI="https://schema.org/Book"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="https://schema.org/CreativeWork"/>
+        <Class IRI="https://schema.org/Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Person"/>
+        <NamedIndividual IRI="Alice_Crary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Person"/>
+        <NamedIndividual IRI="Deidre_Smith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Philosophy_of_language"/>
+        <NamedIndividual IRI="Games"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Person"/>
+        <NamedIndividual IRI="George_Eugene_Moore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Person"/>
+        <NamedIndividual IRI="Janyne_Sattler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Philosophy_of_ethics"/>
+        <NamedIndividual IRI="Life"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Philosophy_of_language"/>
+        <NamedIndividual IRI="Limits"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Person"/>
+        <NamedIndividual IRI="Ludwig_Wittgenstein"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Philosophy_of_ethics"/>
+        <NamedIndividual IRI="Metaphysical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Article"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Article"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Book"/>
+        <NamedIndividual IRI="Notebooks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Person"/>
+        <NamedIndividual IRI="Paul_Formosa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Book"/>
+        <NamedIndividual IRI="Philosophical_Investigations"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Philosophy_of_language"/>
+        <NamedIndividual IRI="Picture_Theory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Book"/>
+        <NamedIndividual IRI="Principia_Ethica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Philosophy_of_ethics"/>
+        <NamedIndividual IRI="Psychological"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Article"/>
+        <NamedIndividual IRI="Rediscovering_Wittgenstein"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Person"/>
+        <NamedIndividual IRI="Rupert_Read"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Article"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Philosophy_of_language"/>
+        <NamedIndividual IRI="Simile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Book"/>
+        <NamedIndividual IRI="The_New_Wittgenstein"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Book"/>
+        <NamedIndividual IRI="Tractatus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Philosophy_of_language"/>
+        <NamedIndividual IRI="Value"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://schema.org/Article"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="author"/>
+        <NamedIndividual IRI="Alice_Crary"/>
+        <NamedIndividual IRI="The_New_Wittgenstein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="author"/>
+        <NamedIndividual IRI="Deidre_Smith"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="author"/>
+        <NamedIndividual IRI="Deidre_Smith"/>
+        <NamedIndividual IRI="Rediscovering_Wittgenstein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="author"/>
+        <NamedIndividual IRI="George_Eugene_Moore"/>
+        <NamedIndividual IRI="Principia_Ethica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="author"/>
+        <NamedIndividual IRI="Janyne_Sattler"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="author"/>
+        <NamedIndividual IRI="Ludwig_Wittgenstein"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="citation"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="citation"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Tractatus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="citation"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Notebooks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Tractatus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Notebooks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDescribing"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Life"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDiscussing"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDiscussing"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Limits"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDiscussing"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Life"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Psychological"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Tractatus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Life"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Metaphysical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Notebooks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Limits"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writtenBy"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <NamedIndividual IRI="Janyne_Sattler"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDefining"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDescribing"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDescribing"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <NamedIndividual IRI="Principia_Ethica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDiscussing"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <NamedIndividual IRI="Limits"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDiscussing"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDiscussing"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <NamedIndividual IRI="Simile"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <NamedIndividual IRI="Simile"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <NamedIndividual IRI="Principia_Ethica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <NamedIndividual IRI="Limits"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writtenBy"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <NamedIndividual IRI="Ludwig_Wittgenstein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writtenBy"/>
+        <NamedIndividual IRI="Notebooks"/>
+        <NamedIndividual IRI="Ludwig_Wittgenstein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="author"/>
+        <NamedIndividual IRI="Paul_Formosa"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writtenBy"/>
+        <NamedIndividual IRI="Philosophical_Investigations"/>
+        <NamedIndividual IRI="Ludwig_Wittgenstein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writtenBy"/>
+        <NamedIndividual IRI="Principia_Ethica"/>
+        <NamedIndividual IRI="George_Eugene_Moore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="citation"/>
+        <NamedIndividual IRI="Rediscovering_Wittgenstein"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <NamedIndividual IRI="Rediscovering_Wittgenstein"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Rediscovering_Wittgenstein"/>
+        <NamedIndividual IRI="Philosophical_Investigations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Rediscovering_Wittgenstein"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writtenBy"/>
+        <NamedIndividual IRI="Rediscovering_Wittgenstein"/>
+        <NamedIndividual IRI="Deidre_Smith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="author"/>
+        <NamedIndividual IRI="Rupert_Read"/>
+        <NamedIndividual IRI="The_New_Wittgenstein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="citation"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Tractatus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="citation"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Notebooks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasIssueWith"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Tractatus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="The_New_Wittgenstein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Notebooks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDefining"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDescribing"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Metaphysical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDescribing"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Life"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDescribing"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Psychological"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDiscussing"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Life"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDiscussing"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Notebooks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Picture_Theory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Psychological"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Life"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Metaphysical"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Tractatus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Limits"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writtenBy"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <NamedIndividual IRI="Paul_Formosa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writtenBy"/>
+        <NamedIndividual IRI="The_New_Wittgenstein"/>
+        <NamedIndividual IRI="Alice_Crary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writtenBy"/>
+        <NamedIndividual IRI="The_New_Wittgenstein"/>
+        <NamedIndividual IRI="Rupert_Read"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writtenBy"/>
+        <NamedIndividual IRI="Tractatus"/>
+        <NamedIndividual IRI="Ludwig_Wittgenstein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="citation"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasIssueWith"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Philosophical_Investigations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isDiscussing"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Philosophical_Investigations"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Simile"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Tractatus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Value"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Life"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isMentioning"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Nachlass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="writtenBy"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <NamedIndividual IRI="Deidre_Smith"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="birthDate"/>
+        <NamedIndividual IRI="Alice_Crary"/>
+        <Literal datatypeIRI="&xsd;dateTime">1967-01-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="familyName"/>
+        <NamedIndividual IRI="Alice_Crary"/>
+        <Literal datatypeIRI="&xsd;string">Grary</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="givenName"/>
+        <NamedIndividual IRI="Alice_Crary"/>
+        <Literal datatypeIRI="&xsd;string">Alice</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="birthDate"/>
+        <NamedIndividual IRI="Deidre_Smith"/>
+        <Literal datatypeIRI="&xsd;dateTime">1964-00-00T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="familyName"/>
+        <NamedIndividual IRI="Deidre_Smith"/>
+        <Literal datatypeIRI="&xsd;string">Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="givenName"/>
+        <NamedIndividual IRI="Deidre_Smith"/>
+        <Literal datatypeIRI="&xsd;string">Deidre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Games"/>
+        <Literal datatypeIRI="&xsd;string">Games</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="birthDate"/>
+        <NamedIndividual IRI="George_Eugene_Moore"/>
+        <Literal datatypeIRI="&xsd;dateTime">1920-02-22T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="familyName"/>
+        <NamedIndividual IRI="George_Eugene_Moore"/>
+        <Literal datatypeIRI="&xsd;string">Moore</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="givenName"/>
+        <NamedIndividual IRI="George_Eugene_Moore"/>
+        <Literal datatypeIRI="&xsd;string">George Eugene</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="familyName"/>
+        <NamedIndividual IRI="Janyne_Sattler"/>
+        <Literal datatypeIRI="&xsd;string">Sattler</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="givenName"/>
+        <NamedIndividual IRI="Janyne_Sattler"/>
+        <Literal datatypeIRI="&xsd;string">Janyne</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Life"/>
+        <Literal datatypeIRI="&xsd;string">Life</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Limits"/>
+        <Literal datatypeIRI="&xsd;string">Limits</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="birthDate"/>
+        <NamedIndividual IRI="Ludwig_Wittgenstein"/>
+        <Literal datatypeIRI="&xsd;dateTime">1889-04-26T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="familyName"/>
+        <NamedIndividual IRI="Ludwig_Wittgenstein"/>
+        <Literal datatypeIRI="&xsd;string">Wittgenstein</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="givenName"/>
+        <NamedIndividual IRI="Ludwig_Wittgenstein"/>
+        <Literal datatypeIRI="&xsd;string">Ludwig</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Metaphysical"/>
+        <Literal datatypeIRI="&xsd;string">Metaphysical</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="datePublished"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <Literal datatypeIRI="&xsd;dateTime">2010-01-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <Literal datatypeIRI="&xsd;string">Moral Judgments as Part of What Ethics Must Show</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="placePublished"/>
+        <NamedIndividual IRI="Moral_Judgements"/>
+        <Literal datatypeIRI="&xsd;string">Montréal, Canada</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="datePublished"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <Literal datatypeIRI="&xsd;dateTime">1929-01-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <Literal datatypeIRI="&xsd;string">Wittgenstein Nachlass TS 207 (Lecture on Ethics): A transcription by the Wittgenstein Archives at the University of Bergen (WAB) [Work in progress] - Normalized edition</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="placePublished"/>
+        <NamedIndividual IRI="Nachlass"/>
+        <Literal datatypeIRI="&xsd;string">Cambridge, England</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="datePublished"/>
+        <NamedIndividual IRI="Notebooks"/>
+        <Literal datatypeIRI="&xsd;dateTime">1961-01-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Notebooks"/>
+        <Literal datatypeIRI="&xsd;string">Notebooks, 1914-1916</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="placePublished"/>
+        <NamedIndividual IRI="Notebooks"/>
+        <Literal datatypeIRI="&xsd;string">New York, USA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="birthDate"/>
+        <NamedIndividual IRI="Paul_Formosa"/>
+        <Literal datatypeIRI="&xsd;dateTime">0000-00-00T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="familyName"/>
+        <NamedIndividual IRI="Paul_Formosa"/>
+        <Literal datatypeIRI="&xsd;string">Formosa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="givenName"/>
+        <NamedIndividual IRI="Paul_Formosa"/>
+        <Literal datatypeIRI="&xsd;string">Paul</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="datePublished"/>
+        <NamedIndividual IRI="Philosophical_Investigations"/>
+        <Literal datatypeIRI="&xsd;dateTime">1953-01-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Philosophical_Investigations"/>
+        <Literal datatypeIRI="&xsd;string">Philosophical Investigations</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="placePublished"/>
+        <NamedIndividual IRI="Philosophical_Investigations"/>
+        <Literal datatypeIRI="&xsd;string">Oxford, United Kingdom</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Picture_Theory"/>
+        <Literal datatypeIRI="&xsd;string">Picture theory</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="datePublished"/>
+        <NamedIndividual IRI="Principia_Ethica"/>
+        <Literal datatypeIRI="&xsd;dateTime">1903-01-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Principia_Ethica"/>
+        <Literal datatypeIRI="&xsd;string">Principia Ethica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="placePublished"/>
+        <NamedIndividual IRI="Principia_Ethica"/>
+        <Literal datatypeIRI="&xsd;string">Cambridge, England</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Psychological"/>
+        <Literal datatypeIRI="&xsd;string">Psychological</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="datePublished"/>
+        <NamedIndividual IRI="Rediscovering_Wittgenstein"/>
+        <Literal datatypeIRI="&xsd;dateTime">2007-01-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Rediscovering_Wittgenstein"/>
+        <Literal datatypeIRI="&xsd;string">Rediscovering Wittgenstein</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="placePublished"/>
+        <NamedIndividual IRI="Rediscovering_Wittgenstein"/>
+        <Literal datatypeIRI="&xsd;string">Bergen, Norway</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="birthDate"/>
+        <NamedIndividual IRI="Rupert_Read"/>
+        <Literal datatypeIRI="&xsd;dateTime">1966-01-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="familyName"/>
+        <NamedIndividual IRI="Rupert_Read"/>
+        <Literal datatypeIRI="&xsd;string">Read</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="givenName"/>
+        <NamedIndividual IRI="Rupert_Read"/>
+        <Literal datatypeIRI="&xsd;string">Rupert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="datePublished"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <Literal datatypeIRI="&xsd;dateTime">2007-12-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <Literal datatypeIRI="&xsd;string">Saying the Unsayable: Wittgenstein&apos;s Early Ethical Thought</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="placePublished"/>
+        <NamedIndividual IRI="Saying_Unsayable"/>
+        <Literal datatypeIRI="&xsd;string">Spain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Simile"/>
+        <Literal datatypeIRI="&xsd;string">Simile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="datePublished"/>
+        <NamedIndividual IRI="The_New_Wittgenstein"/>
+        <Literal datatypeIRI="&xsd;dateTime">2000-01-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="The_New_Wittgenstein"/>
+        <Literal datatypeIRI="&xsd;string">The New Wittgenstein</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="placePublished"/>
+        <NamedIndividual IRI="The_New_Wittgenstein"/>
+        <Literal datatypeIRI="&xsd;string">London, United Kingdom</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="datePublished"/>
+        <NamedIndividual IRI="Tractatus"/>
+        <Literal datatypeIRI="&xsd;dateTime">1921-01-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Tractatus"/>
+        <Literal datatypeIRI="&xsd;string">Tractatus Logico-Philosophicus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="placePublished"/>
+        <NamedIndividual IRI="Tractatus"/>
+        <Literal datatypeIRI="&xsd;string">Germany</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Value"/>
+        <Literal datatypeIRI="&xsd;string">Value</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="datePublished"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <Literal datatypeIRI="&xsd;dateTime">2007-01-01T00:00:00+01:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="name"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <Literal datatypeIRI="&xsd;string">Ethics, Language and the Development of Wittgenstein’s Thought in Ms 139a</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="placePublished"/>
+        <NamedIndividual IRI="Ethics,_Language_and_the_Development_of_Wittgenstein’Deidre,Ethics_Language_Development"/>
+        <Literal datatypeIRI="&xsd;string">Bergen, Norway</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="writtenBy"/>
+        <ObjectProperty IRI="author"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://schema.org/citedBy"/>
+        <ObjectProperty IRI="citation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+        <ObjectProperty IRI="hasIssueWith"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isCommentedOnBy"/>
+        <ObjectProperty IRI="isCommentingOn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isDefinedBy"/>
+        <ObjectProperty IRI="isDefining"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isDescribedBy"/>
+        <ObjectProperty IRI="isDescribing"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isDiscussedBy"/>
+        <ObjectProperty IRI="isDiscussing"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isMentionedBy"/>
+        <ObjectProperty IRI="isMentioning"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="author"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="citation"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="hasIssueWith"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isCommentedOnBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isCommentingOn"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isDefinedBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isDefining"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isDescribedBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isDescribing"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isDiscussedBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isDiscussing"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isMentionedBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isMentioning"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="writtenBy"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="https://schema.org/citedBy"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="author"/>
+        <Class IRI="https://schema.org/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="citation"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasIssueWith"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCommentedOnBy"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isDefinedBy"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isDefining"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isDescribedBy"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isDescribing"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isDiscussedBy"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isDiscussing"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isMentionedBy"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isMentionedBy"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isMentioning"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="writtenBy"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="author"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="citation"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasIssueWith"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCommentedOnBy"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isDefinedBy"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isDefining"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isDescribedBy"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isDescribing"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isDiscussedBy"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isDiscussing"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isMentionedBy"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isMentioning"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isMentioning"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="writtenBy"/>
+        <Class IRI="https://schema.org/Person"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="citation"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="hasIssueWith"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="isCommentedOnBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="isCommentingOn"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="isDefinedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="isDefining"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="isDescribedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="isDescribing"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="isDiscussedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="isDiscussing"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="isMentionedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="isMentioning"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="writtenBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="author"/>
+        <ObjectProperty IRI="https://schema.org/citedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="hasIssueWith"/>
+        <ObjectProperty IRI="isDefinedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="hasIssueWith"/>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isCommentedOnBy"/>
+        <ObjectProperty IRI="isCommentingOn"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isCommentedOnBy"/>
+        <ObjectProperty IRI="isDefining"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isCommentedOnBy"/>
+        <ObjectProperty IRI="isDescribing"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isCommentedOnBy"/>
+        <ObjectProperty IRI="isDiscussing"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isCommentedOnBy"/>
+        <ObjectProperty IRI="isMentioning"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <ObjectProperty IRI="isDefinedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <ObjectProperty IRI="isDescribedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <ObjectProperty IRI="isDiscussedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <ObjectProperty IRI="isMentionedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isCommentingOn"/>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDefinedBy"/>
+        <ObjectProperty IRI="isDefining"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDefinedBy"/>
+        <ObjectProperty IRI="isDescribing"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDefinedBy"/>
+        <ObjectProperty IRI="isDiscussing"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDefinedBy"/>
+        <ObjectProperty IRI="isMentioning"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDefining"/>
+        <ObjectProperty IRI="isDescribedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDefining"/>
+        <ObjectProperty IRI="isDiscussedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDefining"/>
+        <ObjectProperty IRI="isMentionedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDefining"/>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDescribedBy"/>
+        <ObjectProperty IRI="isDescribing"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDescribedBy"/>
+        <ObjectProperty IRI="isDiscussing"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDescribedBy"/>
+        <ObjectProperty IRI="isMentioning"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDescribing"/>
+        <ObjectProperty IRI="isDiscussedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDescribing"/>
+        <ObjectProperty IRI="isMentionedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDescribing"/>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDiscussedBy"/>
+        <ObjectProperty IRI="isDiscussing"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDiscussedBy"/>
+        <ObjectProperty IRI="isMentioning"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDiscussing"/>
+        <ObjectProperty IRI="isMentionedBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isDiscussing"/>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isMentionedBy"/>
+        <ObjectProperty IRI="isMentioning"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="isMentioning"/>
+        <ObjectProperty IRI="isTakenIssueWithBy"/>
+    </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="datePublished"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="birthDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="datePublished"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="placePublished"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="birthDate"/>
+        <Class IRI="https://schema.org/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="datePublished"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="familyName"/>
+        <Class IRI="https://schema.org/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="givenName"/>
+        <Class IRI="https://schema.org/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="name"/>
+        <Class IRI="Subject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="name"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="placePublished"/>
+        <Class IRI="https://schema.org/CreativeWork"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="birthDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="datePublished"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="familyName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="givenName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="placePublished"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="birthDate"/>
+        <DataProperty IRI="datePublished"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="birthDate"/>
+        <DataProperty IRI="name"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="birthDate"/>
+        <DataProperty IRI="placePublished"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="datePublished"/>
+        <DataProperty IRI="familyName"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="datePublished"/>
+        <DataProperty IRI="givenName"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="familyName"/>
+        <DataProperty IRI="name"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="familyName"/>
+        <DataProperty IRI="placePublished"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="givenName"/>
+        <DataProperty IRI="name"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="givenName"/>
+        <DataProperty IRI="placePublished"/>
+    </DisjointDataProperties>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

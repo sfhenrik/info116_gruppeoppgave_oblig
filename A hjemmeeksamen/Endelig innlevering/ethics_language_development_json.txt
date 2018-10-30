@@ -1,0 +1,53 @@
+{
+    "@context": {
+        "schema": "http://schema.org/", 
+        "wit": "http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#",
+        "wit:isDiscussing": {
+            "@type": "@id"
+        }, 
+        "wit:isCommentingOn": {
+            "@type": "@id"
+        }, 
+        "wit:hasIssueWith": {
+            "@type": "@id"
+        }, 
+        "wit:isMentioning": {
+            "@type": "@id"
+        }, 
+        "schema:citation": {
+            "@type": "@id"
+        }, 
+        "schema:image": {
+            "@type": "@id"
+        }, 
+        "schema:author": {
+            "@type": "@id"
+        }
+    }, 
+    "@id": "wit:Ethics_language_development", 
+    "@type": "schema:Article", 
+    "schema:name": "Ethics, Language and the Development of Wittgenstein’s Thought in Ms 139a", 
+    "schema:headline": "Ethics, Language and the Development of Wittgenstein’s Thought in Ms 139a", 
+    "schema:author": {
+        "@id": "wit:Deidre_Smith", 
+        "@type": "schema:Person", 
+        "schema:name": "Deidre Smith"
+    },
+    "schema:datePublished": "2007", 
+    "schema:locationCreated": "Bergen, Norway", 
+    "wit:isDiscussing": "wit:Value", 
+    "wit:isMentioning": [
+        "wit:Value", 
+        "wit:Nachlass", 
+        "wit:Life", 
+        "wit:Simile", 
+        "wit:Philosophical_Investigations", 
+        "wit:Tractatus"
+    ], 
+    "wit:isCommentingOn": [
+        "wit:Philosophical_Investigations", 
+        "wit:Nachlass"
+    ], 
+    "wit:hasIssueWith": "wit:Value", 
+    "schema:citation": "wit:Nachlass"
+}

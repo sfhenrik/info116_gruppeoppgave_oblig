@@ -1,0 +1,75 @@
+{
+    "@context": {
+        "schema": "http://schema.org/",
+        "wit": "http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#",
+        "wit:isDiscussing": {
+            "@type": "@id"
+        }, 
+        "wit:citation": {
+            "@type": "@id"
+        }, 
+        "wit:isDescribing": {
+            "@type": "@id"
+        }, 
+        "wit:hasIssueWith": {
+            "@type": "@id"
+        }, 
+        "wit:isMentioning": {
+            "@type": "@id"
+        }, 
+        "schema:author": {
+            "@type": "@id"
+        }, 
+        "wit:isCommentingOn": {
+            "@type": "@id"
+        }, 
+        "wit:isDefining": {
+            "@type": "@id"
+        }
+        "schema:citation": {
+            "@type": "@id"
+        }
+    }, 
+    "@id": "wit:Saying_Unsayable", 
+    "@type": "schema:Article", 
+    "schema:name": "Saying the Unsayable: Wittgenstein's Early Ethical Thought", 
+    "schema:headline": "Saying the Unsayable: Wittgenstein's Early Ethical Thought", 
+    "wit:hasIssueWith": "wit:Value", 
+    "schema:datePublished": "2007-12-01", 
+    "wit:isCommentingOn": [
+        "wit:Notebooks", 
+        "wit:Tractatus", 
+        "wit:The_New_Wittgenstein", 
+        "wit:Nachlass"
+    ], 
+    "schema:author": {
+        "@id": "wit:Paul_Formosa", 
+        "@type": "schema:Person", 
+        "schema:name": "Paul Formosa"
+    }, 
+    "wit:isDescribing": [
+        "wit:Life", 
+        "wit:Metaphysical", 
+        "wit:Psychological"
+    ], 
+    "wit:isMentioning": [
+        "wit:Value", 
+        "wit:Picture_Theory", 
+        "wit:Life", 
+        "wit:Limits", 
+        "wit:Metaphysical", 
+        "wit:Nachlass", 
+        "wit:Psychological", 
+        "wit:Notebooks", 
+        "wit:Tractatus"
+    ], 
+    "wit:citation": [
+        "wit:Notebooks", 
+        "wit:Tractatus"
+    ], 
+    "wit:isDiscussing": [
+        "wit:Life", 
+        "wit:Value"
+    ], 
+    "wit:isDefining": "wit:Value"
+}

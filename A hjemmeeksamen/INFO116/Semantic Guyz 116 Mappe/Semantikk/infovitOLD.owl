@@ -1,0 +1,1527 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/simen/ontologies/2014/9/untitled-ontology-3"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/simen/ontologies/2014/9/untitled-ontology-3">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AORG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Algoritmer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Architecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Autumn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BASV-INFO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Choice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseCode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseInfo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Database"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Design"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ECON"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#English"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Essay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EvenNumberYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExamType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exphil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GEO"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroupProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INF207"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO100"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO102"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO103"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO110"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO115"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO116"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO125"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO132"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO207"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO212"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO216"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO232"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO233"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO262"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFO282"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#INFOMEDIA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualAssignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Institute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Introduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Java"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MandatoryAssignments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Norwegian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OOP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OddNumberYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrganisationKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PortfolioAssessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Programming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QueryLanguage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RepresentationReasoningKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SOS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SOSANT"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SPOL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SV100"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SVEKS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SVSEM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Schedule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semantic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Semester"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialScienceKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specialization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StudyCredits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subject-Areas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subjects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Systemutvikling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WrittenExam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#covers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mustComplete"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#needs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AI"/>
+        <Class IRI="#Subject-Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AORG"/>
+        <Class IRI="#Institute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Algoritmer"/>
+        <Class IRI="#Subject-Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Architecture"/>
+        <Class IRI="#Subject-Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Assignment"/>
+        <Class IRI="#CourseInfo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Autumn"/>
+        <Class IRI="#Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BASV-INFO"/>
+        <Class IRI="#INFOMEDIA"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Choice"/>
+        <Class IRI="#Subjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseCode"/>
+        <Class IRI="#CourseInfo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CourseInfo"/>
+        <Class IRI="#BASV-INFO"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Database"/>
+        <Class IRI="#Subject-Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Design"/>
+        <Class IRI="#Subject-Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECON"/>
+        <Class IRI="#Institute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#English"/>
+        <Class IRI="#Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Essay"/>
+        <Class IRI="#Assignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EvenNumberYear"/>
+        <Class IRI="#Schedule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExamType"/>
+        <Class IRI="#CourseInfo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exphil"/>
+        <Class IRI="#Subjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GEO"/>
+        <Class IRI="#Institute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroupProject"/>
+        <Class IRI="#Assignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INF207"/>
+        <Class IRI="#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INF207"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Algoritmer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INF207"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Architecture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INF207"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INF207"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INF207"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Social"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INF207"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Autumn"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INF207"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#OddNumberYear"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INF207"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INF207"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO100"/>
+        <Class IRI="#Introduction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO100"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#ProjectKnowledge"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO100"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO100"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO100"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#Norwegian"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO100"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Autumn"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO100"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO102"/>
+        <Class IRI="#Specialization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#AI"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Database"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Programming"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO102"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Spring"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO102"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO102"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO103"/>
+        <Class IRI="#Specialization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO103"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO103"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO103"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#InformationKnowledge"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO103"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Spring"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO103"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO103"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO110"/>
+        <Class IRI="#Specialization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO110"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Architecture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO110"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#OrganisationKnowledge"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO110"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO110"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO110"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#English"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO110"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Spring"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO110"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO110"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#PortfolioAssessment"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO110"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO115"/>
+        <Class IRI="#Specialization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO115"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO115"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Social"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO115"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Autumn"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO115"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO115"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#GroupProject"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO115"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#PortfolioAssessment"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO116"/>
+        <Class IRI="#Specialization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO116"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO116"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Semantic"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO116"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Autumn"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO116"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO116"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#GroupProject"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO116"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO125"/>
+        <Class IRI="#Specialization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO125"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO125"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO125"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Database"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO125"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#English"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO125"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Autumn"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO125"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO125"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO132"/>
+        <Class IRI="#Specialization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO132"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Java"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO132"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#OOP"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO132"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO132"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO132"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Spring"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO132"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO132"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO207"/>
+        <Class IRI="#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO207"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Algoritmer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO207"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Architecture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO207"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO207"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO207"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Social"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO207"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Autumn"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO207"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#EvenNumberYear"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO207"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO207"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO212"/>
+        <Class IRI="#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO212"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO212"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Systemutvikling"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO212"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Autumn"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO212"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO212"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#Essay"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO212"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#GroupProject"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO216"/>
+        <Class IRI="#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO216"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Semantic"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO216"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO216"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO216"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Spring"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO216"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO216"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#GroupProject"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO216"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO232"/>
+        <Class IRI="#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO232"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Programming"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO232"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO232"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO232"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Autumn"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO232"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO232"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO233"/>
+        <Class IRI="#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO233"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Algoritmer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO233"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Architecture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO233"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Programming"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO233"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO233"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO233"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Spring"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO233"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#needs"/>
+            <Class IRI="#INFO132"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO233"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO233"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO262"/>
+        <Class IRI="#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO262"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Design"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO262"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#IndividualAssignment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO262"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO262"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Spring"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO262"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#needs"/>
+            <Class IRI="#INFO100"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO262"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO262"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#GroupProject"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO262"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO282"/>
+        <Class IRI="#Choice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO282"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO282"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO282"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#RepresentationReasoningKnowledge"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO282"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Autumn"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO282"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFO282"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#INFOMEDIA"/>
+        <Class IRI="#Institute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualAssignment"/>
+        <Class IRI="#Assignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationKnowledge"/>
+        <Class IRI="#Theory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Introduction"/>
+        <Class IRI="#Subjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Java"/>
+        <Class IRI="#Programming"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Language"/>
+        <Class IRI="#CourseInfo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MandatoryAssignments"/>
+        <Class IRI="#Assignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Norwegian"/>
+        <Class IRI="#Language"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OOP"/>
+        <Class IRI="#Subject-Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OddNumberYear"/>
+        <Class IRI="#Schedule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrganisationKnowledge"/>
+        <Class IRI="#Theory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PortfolioAssessment"/>
+        <Class IRI="#Assignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Programming"/>
+        <Class IRI="#Subject-Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Programming"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#Programming"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProjectKnowledge"/>
+        <Class IRI="#Theory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QueryLanguage"/>
+        <Class IRI="#Database"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepresentationReasoningKnowledge"/>
+        <Class IRI="#Theory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SOS"/>
+        <Class IRI="#Institute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SOSANT"/>
+        <Class IRI="#Institute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SPOL"/>
+        <Class IRI="#Institute"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SV100"/>
+        <Class IRI="#Introduction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SV100"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#covers"/>
+            <Class IRI="#SocialScienceKnowledge"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SV100"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SV100"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SV100"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#is"/>
+            <Class IRI="#Norwegian"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SV100"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Autumn"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SV100"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVEKS"/>
+        <Class IRI="#Exphil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVEKS"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVEKS"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVEKS"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <ObjectUnionOf>
+                <Class IRI="#Autumn"/>
+                <Class IRI="#Spring"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVEKS"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVEKS"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#WrittenExam"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVSEM"/>
+        <Class IRI="#Exphil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVSEM"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#StudyCredits"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVSEM"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#mustComplete"/>
+            <Class IRI="#MandatoryAssignments"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVSEM"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAt"/>
+            <Class IRI="#Autumn"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SVSEM"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#CourseCode"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Schedule"/>
+        <Class IRI="#CourseInfo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Semantic"/>
+        <Class IRI="#Subject-Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Semester"/>
+        <Class IRI="#Schedule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social"/>
+        <Class IRI="#Subject-Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialScienceKnowledge"/>
+        <Class IRI="#Theory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specialization"/>
+        <Class IRI="#Subjects"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spring"/>
+        <Class IRI="#Semester"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StudyCredits"/>
+        <Class IRI="#CourseInfo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subject-Areas"/>
+        <Class IRI="#BASV-INFO"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subjects"/>
+        <Class IRI="#BASV-INFO"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Systemutvikling"/>
+        <Class IRI="#Subject-Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theory"/>
+        <Class IRI="#Subject-Areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WrittenExam"/>
+        <Class IRI="#ExamType"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#INF207"/>
+        <Class IRI="#INFO216"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO100"/>
+        <Class IRI="#SV100"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO102"/>
+        <Class IRI="#INFO132"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO103"/>
+        <Class IRI="#INFO132"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO110"/>
+        <Class IRI="#INFO132"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO115"/>
+        <Class IRI="#INFO132"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO116"/>
+        <Class IRI="#INFO132"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO125"/>
+        <Class IRI="#INFO132"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO207"/>
+        <Class IRI="#INFO216"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO212"/>
+        <Class IRI="#INFO216"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO216"/>
+        <Class IRI="#INFO232"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO216"/>
+        <Class IRI="#INFO233"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO216"/>
+        <Class IRI="#INFO262"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#INFO216"/>
+        <Class IRI="#INFO282"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#SVEKS"/>
+        <Class IRI="#SVSEM"/>
+    </DisjointClasses>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

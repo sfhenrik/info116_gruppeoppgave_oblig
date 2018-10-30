@@ -1,0 +1,66 @@
+-------- PREFIXES ---------
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#> 
+
+
+----- SPARQL QUERY #1 -----
+
+SELECT ?fname ?lname ?litterature
+WHERE {
+	?x :isDiscussing :Value ;
+	:isCommentingOn :Nachlass ;
+	:name ?litterature ;
+	:writtenBy ?y .
+	?y :givenName ?fname ;
+	:familyName ?lname .
+}
+
+
+----- SPARQL QUERY #2 -----
+
+SELECT ?fname ?lname ?litterature
+WHERE {
+	?x :writtenBy ?author ;
+	:name ?litterature ;
+	:isCommentingOn :Nachlass .
+	?author :givenName ?fname ;
+	:familyName ?lname .
+	FILTER regex(?lname, "smith", "i")
+}
+
+
+----- SPARQL QUERY #3 -----
+
+SELECT ?article ?published
+WHERE {
+	?x :datePublished ?published ;
+	:name ?article .
+	FILTER (?published > "2000-01-01T00:00:00+01:00"^^xsd:dateTime)
+}
+ORDER BY ASC(?published)
+
+
+----- SPARQL QUERY #4 -----
+
+SELECT ?name ?date ?place
+WHERE {
+	?x :placePublished ?place ;
+	:name ?name ;
+	:datePublished ?date .
+	FILTER (regex(?place, "bergen", "i") && (?date > "2000-01-01T00:00:00+01:00"^^xsd:dateTime))
+	}
+ORDER BY ASC(?name)
+
+
+----- SPARQL QUERY #5 -----
+
+CONSTRUCT {
+	?author :isDiscussing :Value  
+} WHERE {
+	?author :author ?creativeWork .
+	?creativeWork :isDiscussing :Value .
+}

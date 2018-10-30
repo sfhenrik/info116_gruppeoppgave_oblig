@@ -1,0 +1,63 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://www.semanticweb.org/simen/ontologies/2014/9/basv_info>
+PREFIX :subject <http://www.semanticweb.org/simen/ontologies/2014/9/subjects>
+PREFIX :info <http://www.semanticweb.org/simen/ontologies/2014/9/courseinfo>
+PREFIX course: <http://www.uib.no/emne/>
+
+SELECT ?subject
+	WHERE { ?subject rdfs:subClassOf iv:Specialization }
+	
+
+#Which ones has programming
+	
+SELECT ?subjName
+	WHERE { 
+	?subjName :covers :programming ;
+			  :covers :oop .
+}
+
+#How many groupprojects or mandatoryAssignements
+
+SELECT 	?courseName
+	WHERE {
+		?courseName :has :groupProject ;
+					:has :mandatoryAssignements .
+	}
+
+#Which courses are at autumn
+	
+SELECT ?courseName
+	WHERE {
+		?courseName :isAt :autumn .
+	}
+ORDER BY ?courseName
+
+#Covers any of them both OOP and algorithms
+
+SELECT ?subjName
+	   ?subjNm
+	WHERE { 
+	?subjName 	:covers :algoritmer .
+	?subjNm :covers :oop .
+	FILTER (?subjName && ?subjNm)
+}
+
+#How many studycredits for the course
+
+SELECT ?points
+	WHERE {
+		?points :isAt :spring ;
+				 :has :studyCredits .
+	}
+ORDER BY ?points
+
+#Which subject areas do you learn from the course
+
+SELECT ?subjName
+	WHERE {
+	?subjName :has :subjectAreas .
+	FILTER (subjName = course:INFO132)
+	}

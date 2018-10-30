@@ -1,0 +1,63 @@
+{
+    "@context": {
+        "schema": "http://schema.org/", 
+        "wit": "http://www.semanticweb.org/vsj010/ontologies/2015/10/untitled-ontology-4#",
+        "wit:isMentioning": {
+            "@type": "@id"
+        }, 
+        "wit:isDiscussing": {
+            "@type": "@id"
+        }, 
+        "wit:isCommentingOn": {
+            "@type": "@id"
+        }, 
+        "schema:author": {
+            "@type": "@id"
+        }, 
+        "schema:image": {
+            "@type": "@id"
+        }, 
+        "wit:isDescribing": {
+            "@type": "@id"
+        }
+    }, 
+    "@id": "wit:Moral_Judgments", 
+    "@type": "schema:Article", 
+    "wit:isDescribing": [
+        "wit:Life", 
+        "wit:Value"
+    ], 
+    "schema:citation": [
+        "Notebooks", 
+        "Tractatus", 
+        "Nachlass"
+    ],
+    "schema:name": "Moral Judgments as Part of What Ethics Must Show", 
+    "schema:author": {
+        "@id": "wit:Janyne_Sattler", 
+        "@type": "schema:Person", 
+        "schema:name": "Janyne Sattler"
+    }, 
+    "schema:headline": "Moral Judgments as Part of What Ethics Must Show",
+    "schema:datePublished": "2010", 
+    "schema:locationCreated": "Montréal, Canada",
+    "wit:isMentioning": [
+        "wit:Psychological", 
+        "wit:Metaphysical", 
+        "wit:Limits", 
+        "wit:Tractatus", 
+        "wit:Value", 
+        "wit:Nachlass", 
+        "wit:Life", 
+        "wit:Notebooks"
+    ], 
+    "wit:isCommentingOn": [
+        "wit:Nachlass", 
+        "wit:Notebooks"
+    ], 
+    "wit:isDiscussing": [
+        "wit:Limits", 
+        "wit:Life", 
+        "wit:Value"
+    ]
+}

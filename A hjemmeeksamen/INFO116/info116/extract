@@ -1,0 +1,58 @@
+@prefix ns1: <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix ns2: <http://schema.org/> .
+@prefix ns3: <http://www.w3.org/ns/rdfa#> .
+@prefix og: <http://ogp.me/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.bbc.co.uk/programmes/b006q2x0> a ns2:Series;
+    og:description "Adventures in Space and Time."@en-gb;
+    og:image "http://ichef.bbci.co.uk/images/ic/368x207/p01lzjsf.jpg"@en-gb;
+    og:site_name "BBC"@en-gb;
+    og:title "Doctor Who - BBC One"@en-gb;
+    og:url "http://www.bbc.co.uk/programmes/b006q2x0"@en-gb;
+    ns2:description "Adventures in Space and Time."@en-gb;
+    ns2:image "http://ichef.bbci.co.uk/images/ic/480x270/p01lzjsf.jpg"@en-gb;
+    ns2:name "Doctor Who"@en-gb;
+    ns3:usesVocabulary ns2: .
+
+<http://www.bbc.co.uk/programmes/b006q2x0#orb-banner> ns1:role ns1:banner .
+
+<http://www.bbc.co.uk/programmes/b006q2x0#orb-search-form> ns1:role ns1:search .
+
+<http://www.bbc.co.uk/programmes/b04kf1lh> a ns2:Episode;
+    ns2:image "http://ichef.bbci.co.uk/images/ic/480x270/p0276sj1.jpg"@en-gb;
+    ns2:name "The Caretaker"@en-gb;
+    ns2:partOfSeason <http://www.bbc.co.uk/programmes/p023w977>;
+    ns2:publication [ a ns2:OnDemandEvent;
+            ns2:endDate "2014-11-15T19:14:00+00:00"^^xsd:dateTime ];
+    ns2:url <http://www.bbc.co.uk/programmes/programmes/b04kf1lh>;
+    ns2:video [ a ns2:VideoObject;
+            ns2:name "BBC iPlayer"@en-gb;
+            ns2:url <http://www.bbc.co.uk/iplayer/episode/b04kf1lh> ] .
+
+<http://www.bbc.co.uk/programmes/b04l339v> a ns2:Episode;
+    ns2:image "http://ichef.bbci.co.uk/images/ic/480x270/p027nrss.jpg"@en-gb;
+    ns2:name "Kill the Moon"@en-gb;
+    ns2:partOfSeason <http://www.bbc.co.uk/programmes/p023w977>;
+    ns2:publication [ a ns2:BroadcastEvent;
+            ns2:endDate "2014-10-04T21:15:00+01:00"^^xsd:dateTime;
+            ns2:name "BBC One"@en-gb;
+            ns2:publishedOn <http://www.bbc.co.uk/bbcone>;
+            ns2:startDate "2014-10-04T20:30:00+01:00"^^xsd:dateTime ];
+    ns2:url <http://www.bbc.co.uk/programmes/programmes/b04l339v> .
+
+<http://www.bbc.co.uk/bbcone> a ns2:BroadcastService;
+    ns2:name "BBC One"@en-gb .
+
+<http://www.bbc.co.uk/programmes/p023w977> a ns2:Season;
+    ns2:name "Series 8"@en-gb .
+
+[] ns1:role ns1:complementary .
+
+[] ns1:role ns1:navigation .
+
+[] ns1:role ns1:contentinfo .
+
+[] ns1:role ns1:navigation .
+
+

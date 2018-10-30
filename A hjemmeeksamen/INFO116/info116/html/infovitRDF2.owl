@@ -1,0 +1,1723 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY infovit "http://www.semanticweb.org/simen/ontologies/2014/9/infovit#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:infovit="http://www.semanticweb.org/simen/ontologies/2014/9/infovit#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Ontology rdf:about="http://www.semanticweb.org/simen/ontologies/2014/9/infovit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#covers -->
+
+    <ObjectProperty rdf:about="&infovit;covers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#has -->
+
+    <ObjectProperty rdf:about="&infovit;has"/>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#is -->
+
+    <ObjectProperty rdf:about="&infovit;is"/>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#isAt -->
+
+    <ObjectProperty rdf:about="&infovit;isAt">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#mustComplete -->
+
+    <ObjectProperty rdf:about="&infovit;mustComplete">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#needs -->
+
+    <ObjectProperty rdf:about="&infovit;needs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#has -->
+
+    <DatatypeProperty rdf:about="&infovit;has"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#AORG -->
+
+    <Class rdf:about="&infovit;AORG">
+        <rdfs:subClassOf rdf:resource="&infovit;Institute"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Assignment -->
+
+    <Class rdf:about="&infovit;Assignment">
+        <rdfs:subClassOf rdf:resource="&infovit;CourseInfo"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#BASV-INFO -->
+
+    <Class rdf:about="&infovit;BASV-INFO">
+        <rdfs:subClassOf rdf:resource="&infovit;INFOMEDIA"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Choice -->
+
+    <Class rdf:about="&infovit;Choice">
+        <rdfs:subClassOf rdf:resource="&infovit;Subjects"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#CourseInfo -->
+
+    <Class rdf:about="&infovit;CourseInfo">
+        <rdfs:subClassOf rdf:resource="&infovit;BASV-INFO"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#ECON -->
+
+    <Class rdf:about="&infovit;ECON">
+        <rdfs:subClassOf rdf:resource="&infovit;Institute"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Essay -->
+
+    <Class rdf:about="&infovit;Essay">
+        <rdfs:subClassOf rdf:resource="&infovit;Assignment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#ExamType -->
+
+    <Class rdf:about="&infovit;ExamType">
+        <rdfs:subClassOf rdf:resource="&infovit;CourseInfo"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Exphil -->
+
+    <Class rdf:about="&infovit;Exphil">
+        <rdfs:subClassOf rdf:resource="&infovit;Subjects"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#GEO -->
+
+    <Class rdf:about="&infovit;GEO">
+        <rdfs:subClassOf rdf:resource="&infovit;Institute"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#GroupProject -->
+
+    <Class rdf:about="&infovit;GroupProject">
+        <rdfs:subClassOf rdf:resource="&infovit;Assignment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INF207 -->
+
+    <Class rdf:about="&infovit;INF207">
+        <rdfs:subClassOf rdf:resource="&infovit;Choice"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO100 -->
+
+    <Class rdf:about="&infovit;INFO100">
+        <rdfs:subClassOf rdf:resource="&infovit;Introduction"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO102 -->
+
+    <Class rdf:about="&infovit;INFO102">
+        <rdfs:subClassOf rdf:resource="&infovit;Specialization"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO103 -->
+
+    <Class rdf:about="&infovit;INFO103">
+        <rdfs:subClassOf rdf:resource="&infovit;Specialization"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO110 -->
+
+    <Class rdf:about="&infovit;INFO110">
+        <rdfs:subClassOf rdf:resource="&infovit;Specialization"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;PortfolioAssessment"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO115 -->
+
+    <Class rdf:about="&infovit;INFO115">
+        <rdfs:subClassOf rdf:resource="&infovit;Specialization"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;GroupProject"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;PortfolioAssessment"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO116 -->
+
+    <Class rdf:about="&infovit;INFO116">
+        <rdfs:subClassOf rdf:resource="&infovit;Specialization"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;GroupProject"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO125 -->
+
+    <Class rdf:about="&infovit;INFO125">
+        <rdfs:subClassOf rdf:resource="&infovit;Specialization"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO132 -->
+
+    <Class rdf:about="&infovit;INFO132">
+        <rdfs:subClassOf rdf:resource="&infovit;Specialization"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO207 -->
+
+    <Class rdf:about="&infovit;INFO207">
+        <rdfs:subClassOf rdf:resource="&infovit;Choice"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO212 -->
+
+    <Class rdf:about="&infovit;INFO212">
+        <rdfs:subClassOf rdf:resource="&infovit;Choice"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;Essay"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;GroupProject"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO216 -->
+
+    <Class rdf:about="&infovit;INFO216">
+        <rdfs:subClassOf rdf:resource="&infovit;Choice"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;GroupProject"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO232 -->
+
+    <Class rdf:about="&infovit;INFO232">
+        <rdfs:subClassOf rdf:resource="&infovit;Choice"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO233 -->
+
+    <Class rdf:about="&infovit;INFO233">
+        <rdfs:subClassOf rdf:resource="&infovit;Choice"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;needs"/>
+                <onClass rdf:resource="&infovit;INFO132"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO262 -->
+
+    <Class rdf:about="&infovit;INFO262">
+        <rdfs:subClassOf rdf:resource="&infovit;Choice"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;GroupProject"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;IndividualAssignment"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;needs"/>
+                <onClass rdf:resource="&infovit;INFO100"/>
+                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</minQualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO282 -->
+
+    <Class rdf:about="&infovit;INFO282">
+        <rdfs:subClassOf rdf:resource="&infovit;Choice"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFOMEDIA -->
+
+    <Class rdf:about="&infovit;INFOMEDIA">
+        <rdfs:subClassOf rdf:resource="&infovit;Institute"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#IndividualAssignment -->
+
+    <Class rdf:about="&infovit;IndividualAssignment">
+        <rdfs:subClassOf rdf:resource="&infovit;Assignment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Institute -->
+
+    <Class rdf:about="&infovit;Institute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Introduction -->
+
+    <Class rdf:about="&infovit;Introduction">
+        <rdfs:subClassOf rdf:resource="&infovit;Subjects"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Language -->
+
+    <Class rdf:about="&infovit;Language">
+        <rdfs:subClassOf rdf:resource="&infovit;CourseInfo"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#MandatoryAssignments -->
+
+    <Class rdf:about="&infovit;MandatoryAssignments">
+        <rdfs:subClassOf rdf:resource="&infovit;Assignment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#PortfolioAssessment -->
+
+    <Class rdf:about="&infovit;PortfolioAssessment">
+        <rdfs:subClassOf rdf:resource="&infovit;Assignment"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SOS -->
+
+    <Class rdf:about="&infovit;SOS">
+        <rdfs:subClassOf rdf:resource="&infovit;Institute"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SOSANT -->
+
+    <Class rdf:about="&infovit;SOSANT">
+        <rdfs:subClassOf rdf:resource="&infovit;Institute"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SPOL -->
+
+    <Class rdf:about="&infovit;SPOL">
+        <rdfs:subClassOf rdf:resource="&infovit;Institute"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SV100 -->
+
+    <Class rdf:about="&infovit;SV100">
+        <rdfs:subClassOf rdf:resource="&infovit;Introduction"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SVEKS -->
+
+    <Class rdf:about="&infovit;SVEKS">
+        <rdfs:subClassOf rdf:resource="&infovit;Exphil"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <onClass rdf:resource="&infovit;WrittenExam"/>
+                <qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</qualifiedCardinality>
+            </Restriction>
+        </rdfs:subClassOf>
+        <disjointWith rdf:resource="&infovit;SVSEM"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SVSEM -->
+
+    <Class rdf:about="&infovit;SVSEM">
+        <rdfs:subClassOf rdf:resource="&infovit;Exphil"/>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;mustComplete"/>
+                <someValuesFrom rdf:resource="&infovit;MandatoryAssignments"/>
+            </Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <Restriction>
+                <onProperty rdf:resource="&infovit;has"/>
+                <someValuesFrom rdf:resource="&infovit;StudyCredits"/>
+            </Restriction>
+        </rdfs:subClassOf>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Schedule -->
+
+    <Class rdf:about="&infovit;Schedule">
+        <rdfs:subClassOf rdf:resource="&infovit;CourseInfo"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Semester -->
+
+    <Class rdf:about="&infovit;Semester">
+        <rdfs:subClassOf rdf:resource="&infovit;Schedule"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Specialization -->
+
+    <Class rdf:about="&infovit;Specialization">
+        <rdfs:subClassOf rdf:resource="&infovit;Subjects"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#StudyCredits -->
+
+    <Class rdf:about="&infovit;StudyCredits">
+        <rdfs:subClassOf rdf:resource="&infovit;CourseInfo"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Subject-Areas -->
+
+    <Class rdf:about="&infovit;Subject-Areas">
+        <rdfs:subClassOf rdf:resource="&infovit;BASV-INFO"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Subjects -->
+
+    <Class rdf:about="&infovit;Subjects">
+        <rdfs:subClassOf rdf:resource="&infovit;BASV-INFO"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#WrittenExam -->
+
+    <Class rdf:about="&infovit;WrittenExam">
+        <rdfs:subClassOf rdf:resource="&infovit;ExamType"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#AI -->
+
+    <NamedIndividual rdf:about="&infovit;AI">
+        <rdf:type rdf:resource="&infovit;Subject-Areas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Algorithms -->
+
+    <NamedIndividual rdf:about="&infovit;Algorithms">
+        <rdf:type rdf:resource="&infovit;Subject-Areas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Autumn -->
+
+    <NamedIndividual rdf:about="&infovit;Autumn">
+        <rdf:type rdf:resource="&infovit;Semester"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Data-Architecture -->
+
+    <NamedIndividual rdf:about="&infovit;Data-Architecture">
+        <rdf:type rdf:resource="&infovit;Subject-Areas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Database -->
+
+    <NamedIndividual rdf:about="&infovit;Database">
+        <rdf:type rdf:resource="&infovit;Subject-Areas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Design -->
+
+    <NamedIndividual rdf:about="&infovit;Design">
+        <rdf:type rdf:resource="&infovit;Subject-Areas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#English -->
+
+    <NamedIndividual rdf:about="&infovit;English">
+        <rdf:type rdf:resource="&infovit;Language"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INF207H14 -->
+
+    <NamedIndividual rdf:about="&infovit;INF207H14">
+        <rdf:type rdf:resource="&infovit;INF207"/>
+        <infovit:covers rdf:resource="&infovit;Algorithms"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:covers rdf:resource="&infovit;Data-Architecture"/>
+        <infovit:has rdf:resource="&infovit;INF207H14Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INF207H14MandatoryAssignment"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:covers rdf:resource="&infovit;Social"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INF207H14Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INF207H14Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INF207H14MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INF207H14MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO100H14 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO100H14">
+        <rdf:type rdf:resource="&infovit;INFO100"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:covers rdf:resource="&infovit;Data-Architecture"/>
+        <infovit:has rdf:resource="&infovit;INFO100H14Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO100H14MandatoryAssignment"/>
+        <infovit:is rdf:resource="&infovit;Norwegian"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO100H14Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO100H14Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO100H14MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO100H14MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO102V15 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO102V15">
+        <rdf:type rdf:resource="&infovit;INFO102"/>
+        <infovit:covers rdf:resource="&infovit;AI"/>
+        <infovit:covers rdf:resource="&infovit;Database"/>
+        <infovit:has rdf:resource="&infovit;INFO102V15Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO102V15MandatoryAssignment"/>
+        <infovit:covers rdf:resource="&infovit;Programming"/>
+        <infovit:has rdf:resource="&infovit;STC5"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO102V15Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO102V15Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO102V15MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO102V15MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+        <infovit:covers rdf:resource="&infovit;AI"/>
+        <infovit:covers rdf:resource="&infovit;Database"/>
+        <infovit:has rdf:resource="&infovit;INFO102V15Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO102V15MandatoryAssignment"/>
+        <infovit:covers rdf:resource="&infovit;Programming"/>
+        <infovit:has rdf:resource="&infovit;STC5"/>
+        <infovit:isAt rdf:resource="&infovit;Spring"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO103V15 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO103V15">
+        <rdf:type rdf:resource="&infovit;INFO103"/>
+        <infovit:has rdf:resource="&infovit;INFO103V15Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO103V15MandatoryAssignment"/>
+        <infovit:is rdf:resource="&infovit;Norwegian"/>
+        <infovit:has rdf:resource="&infovit;STC5"/>
+        <infovit:isAt rdf:resource="&infovit;Spring"/>
+        <infovit:covers rdf:resource="&infovit;Theory"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO103V15Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO103V15Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO103V15MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO103V15MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+        <infovit:has rdf:resource="&infovit;INFO103V15Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO103V15MandatoryAssignment"/>
+        <infovit:has rdf:resource="&infovit;STC5"/>
+        <infovit:isAt rdf:resource="&infovit;Spring"/>
+        <infovit:covers rdf:resource="&infovit;Theory"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO110V15 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO110V15">
+        <rdf:type rdf:resource="&infovit;INFO110"/>
+        <infovit:covers rdf:resource="&infovit;Data-Architecture"/>
+        <infovit:is rdf:resource="&infovit;English"/>
+        <infovit:has rdf:resource="&infovit;INFO110V15Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO110V15MandatoryAssignment"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO110V15PortfolioAssignment"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:isAt rdf:resource="&infovit;Spring"/>
+        <infovit:covers rdf:resource="&infovit;Theory"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO110V15Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO110V15Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO110V15MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO110V15MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO110V15PortfolioAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO110V15PortfolioAssignment">
+        <rdf:type rdf:resource="&infovit;PortfolioAssessment"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO115H14 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO115H14">
+        <rdf:type rdf:resource="&infovit;INFO115"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:is rdf:resource="&infovit;English"/>
+        <infovit:has rdf:resource="&infovit;INFO115H14GroupProject"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO115H14PortfolioAssignmentNR1"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO115H14PortfolioAssignmentNR2"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO115H14GroupProject -->
+
+    <NamedIndividual rdf:about="&infovit;INFO115H14GroupProject">
+        <rdf:type rdf:resource="&infovit;GroupProject"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO115H14PortfolioAssignmentNR1 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO115H14PortfolioAssignmentNR1">
+        <rdf:type rdf:resource="&infovit;PortfolioAssessment"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO115H14PortfolioAssignmentNR2 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO115H14PortfolioAssignmentNR2">
+        <rdf:type rdf:resource="&infovit;PortfolioAssessment"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO116H14 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO116H14">
+        <rdf:type rdf:resource="&infovit;INFO116"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:is rdf:resource="&infovit;English"/>
+        <infovit:has rdf:resource="&infovit;INFO116H14Exam"/>
+        <infovit:has rdf:resource="&infovit;INFO116H14GroupProject"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:covers rdf:resource="&infovit;Semantic"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO116H14Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO116H14Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO116H14GroupProject -->
+
+    <NamedIndividual rdf:about="&infovit;INFO116H14GroupProject">
+        <rdf:type rdf:resource="&infovit;GroupProject"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO125H14 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO125H14">
+        <rdf:type rdf:resource="&infovit;INFO125"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:covers rdf:resource="&infovit;Database"/>
+        <infovit:is rdf:resource="&infovit;English"/>
+        <infovit:has rdf:resource="&infovit;INFO125H14Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO125H14MandatoryAssignmentNR1"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO125H14MandatoryAssignmentNR2"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO125H14MandatoryAssignmentNR3"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO125H14Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO125H14Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO125H14MandatoryAssignmentNR1 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO125H14MandatoryAssignmentNR1">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO125H14MandatoryAssignmentNR2 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO125H14MandatoryAssignmentNR2">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO125H14MandatoryAssignmentNR3 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO125H14MandatoryAssignmentNR3">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO132H14 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO132H14">
+        <rdf:type rdf:resource="&infovit;INFO132"/>
+        <infovit:has rdf:resource="&infovit;INFO132H14Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO132H14MandatoryAssignment"/>
+        <infovit:is rdf:resource="&infovit;Norwegian"/>
+        <infovit:covers rdf:resource="&infovit;Programming"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:isAt rdf:resource="&infovit;Spring"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO132H14Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO132H14Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO132H14MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO132H14MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO207H14Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO207H14Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO207V15 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO207V15">
+        <rdf:type rdf:resource="&infovit;INFO207"/>
+        <infovit:covers rdf:resource="&infovit;Algorithms"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:covers rdf:resource="&infovit;Data-Architecture"/>
+        <infovit:has rdf:resource="&infovit;INFO207H14Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO207V15MandatoryAssignment"/>
+        <infovit:is rdf:resource="&infovit;Norwegian"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:covers rdf:resource="&infovit;Social"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO207V15MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO207V15MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO212H14 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO212H14">
+        <rdf:type rdf:resource="&infovit;INFO212"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:has rdf:resource="&infovit;INFO212H14Essay"/>
+        <infovit:has rdf:resource="&infovit;INFO212H14GroupProject"/>
+        <infovit:is rdf:resource="&infovit;Norwegian"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:covers rdf:resource="&infovit;System-Development"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO212H14Essay -->
+
+    <NamedIndividual rdf:about="&infovit;INFO212H14Essay">
+        <rdf:type rdf:resource="&infovit;Essay"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO212H14GroupProject -->
+
+    <NamedIndividual rdf:about="&infovit;INFO212H14GroupProject">
+        <rdf:type rdf:resource="&infovit;GroupProject"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO216V15 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO216V15">
+        <rdf:type rdf:resource="&infovit;INFO216"/>
+        <infovit:is rdf:resource="&infovit;English"/>
+        <infovit:has rdf:resource="&infovit;INFO216V15Exam"/>
+        <infovit:has rdf:resource="&infovit;INFO216V15GroupProject"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO216V15MandatoryAssignment"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:covers rdf:resource="&infovit;Semantic"/>
+        <infovit:isAt rdf:resource="&infovit;Spring"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO216V15Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO216V15Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO216V15GroupProject -->
+
+    <NamedIndividual rdf:about="&infovit;INFO216V15GroupProject">
+        <rdf:type rdf:resource="&infovit;GroupProject"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO216V15MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO216V15MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO232H14 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO232H14">
+        <rdf:type rdf:resource="&infovit;INFO232"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:has rdf:resource="&infovit;INFO232H14Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO232H14MandatoryAssignment"/>
+        <infovit:is rdf:resource="&infovit;Norwegian"/>
+        <infovit:covers rdf:resource="&infovit;Programming"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO232H14Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO232H14Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO232H14MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO232H14MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO233V15 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO233V15">
+        <rdf:type rdf:resource="&infovit;INFO233"/>
+        <infovit:covers rdf:resource="&infovit;Algorithms"/>
+        <infovit:covers rdf:resource="&infovit;Data-Architecture"/>
+        <infovit:has rdf:resource="&infovit;INFO233V15Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO233V15MandatoryAssignment"/>
+        <infovit:is rdf:resource="&infovit;Norwegian"/>
+        <infovit:covers rdf:resource="&infovit;Programming"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:isAt rdf:resource="&infovit;Spring"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO233V15Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO233V15Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO233V15MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO233V15MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO262V15 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO262V15">
+        <rdf:type rdf:resource="&infovit;INFO262"/>
+        <infovit:covers rdf:resource="&infovit;Design"/>
+        <infovit:is rdf:resource="&infovit;English"/>
+        <infovit:has rdf:resource="&infovit;INFO262V15Exam"/>
+        <infovit:has rdf:resource="&infovit;INFO262V15GroupProject"/>
+        <infovit:has rdf:resource="&infovit;INFO262V15IndividualAssignment"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:isAt rdf:resource="&infovit;Spring"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO262V15Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO262V15Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO262V15GroupProject -->
+
+    <NamedIndividual rdf:about="&infovit;INFO262V15GroupProject">
+        <rdf:type rdf:resource="&infovit;GroupProject"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO262V15IndividualAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO262V15IndividualAssignment">
+        <rdf:type rdf:resource="&infovit;IndividualAssignment"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO282H14 -->
+
+    <NamedIndividual rdf:about="&infovit;INFO282H14">
+        <rdf:type rdf:resource="&infovit;INFO282"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:is rdf:resource="&infovit;English"/>
+        <infovit:has rdf:resource="&infovit;INFO282H14Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO282H14MandatoryAssignment"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:covers rdf:resource="&infovit;Theory"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO282H14Exam -->
+
+    <NamedIndividual rdf:about="&infovit;INFO282H14Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#INFO282H14MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;INFO282H14MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:has rdf:resource="&infovit;INFO282H14Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;INFO282H14MandatoryAssignment"/>
+        <infovit:has rdf:resource="&infovit;STC5"/>
+        <infovit:covers rdf:resource="&infovit;Theory"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Norwegian -->
+
+    <NamedIndividual rdf:about="&infovit;Norwegian">
+        <rdf:type rdf:resource="&infovit;Language"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#OOP -->
+
+    <NamedIndividual rdf:about="&infovit;OOP">
+        <rdf:type rdf:resource="&infovit;Subject-Areas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Programming -->
+
+    <NamedIndividual rdf:about="&infovit;Programming">
+        <rdf:type rdf:resource="&infovit;Subject-Areas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#STC10 -->
+
+    <NamedIndividual rdf:about="&infovit;STC10">
+        <rdf:type rdf:resource="&infovit;StudyCredits"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#STC5 -->
+
+    <NamedIndividual rdf:about="&infovit;STC5">
+        <rdf:type rdf:resource="&infovit;StudyCredits"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SV100H14 -->
+
+    <NamedIndividual rdf:about="&infovit;SV100H14">
+        <rdf:type rdf:resource="&infovit;SV100"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:is rdf:resource="&infovit;Norwegian"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:has rdf:resource="&infovit;SV100H14Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;SV100H14MandatoryAssignment"/>
+        <infovit:covers rdf:resource="&infovit;Theory"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SV100H14Exam -->
+
+    <NamedIndividual rdf:about="&infovit;SV100H14Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SV100H14MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;SV100H14MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:has rdf:resource="&infovit;SV100H14Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;SVSEMH14MandatoryAssignment"/>
+        <infovit:covers rdf:resource="&infovit;Theory"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SVEKSH14 -->
+
+    <NamedIndividual rdf:about="&infovit;SVEKSH14">
+        <rdf:type rdf:resource="&infovit;SVEKS"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:is rdf:resource="&infovit;Norwegian"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:has rdf:resource="&infovit;SVEKSH14Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;SVEKSH14MandatoryAssignment"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SVEKSH14Exam -->
+
+    <NamedIndividual rdf:about="&infovit;SVEKSH14Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SVEKSH14MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;SVEKSH14MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SVEKSV15 -->
+
+    <NamedIndividual rdf:about="&infovit;SVEKSV15">
+        <rdf:type rdf:resource="&infovit;SVEKS"/>
+        <infovit:is rdf:resource="&infovit;Norwegian"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:has rdf:resource="&infovit;SVEKSV15Exam"/>
+        <infovit:mustComplete rdf:resource="&infovit;SVEKSV15MandatoryAssignment"/>
+        <infovit:isAt rdf:resource="&infovit;Spring"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SVEKSV15Exam -->
+
+    <NamedIndividual rdf:about="&infovit;SVEKSV15Exam">
+        <rdf:type rdf:resource="&infovit;WrittenExam"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SVEKSV15MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;SVEKSV15MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SVSEMH14 -->
+
+    <NamedIndividual rdf:about="&infovit;SVSEMH14">
+        <rdf:type rdf:resource="&infovit;SVSEM"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:is rdf:resource="&infovit;Norwegian"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:mustComplete rdf:resource="&infovit;SVSEMH14MandatoryAssignment"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#SVSEMH14MandatoryAssignment -->
+
+    <NamedIndividual rdf:about="&infovit;SVSEMH14MandatoryAssignment">
+        <rdf:type rdf:resource="&infovit;MandatoryAssignments"/>
+        <infovit:isAt rdf:resource="&infovit;Autumn"/>
+        <infovit:has rdf:resource="&infovit;STC10"/>
+        <infovit:mustComplete rdf:resource="&infovit;SVSEMH14MandatoryAssignment"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Semantic -->
+
+    <NamedIndividual rdf:about="&infovit;Semantic">
+        <rdf:type rdf:resource="&infovit;Subject-Areas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Social -->
+
+    <NamedIndividual rdf:about="&infovit;Social">
+        <rdf:type rdf:resource="&infovit;Subject-Areas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Spring -->
+
+    <NamedIndividual rdf:about="&infovit;Spring">
+        <rdf:type rdf:resource="&infovit;Semester"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#System-Development -->
+
+    <NamedIndividual rdf:about="&infovit;System-Development">
+        <rdf:type rdf:resource="&infovit;Subject-Areas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/simen/ontologies/2014/9/infovit#Theory -->
+
+    <NamedIndividual rdf:about="&infovit;Theory">
+        <rdf:type rdf:resource="&infovit;Subject-Areas"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&infovit;Autumn"/>
+            <rdf:Description rdf:about="&infovit;Spring"/>
+        </distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&infovit;SVEKSH14"/>
+            <rdf:Description rdf:about="&infovit;SVSEMH14"/>
+        </distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&infovit;STC10"/>
+            <rdf:Description rdf:about="&infovit;STC5"/>
+        </distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
