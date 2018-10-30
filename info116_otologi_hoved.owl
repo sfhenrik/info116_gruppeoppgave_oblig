@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Austria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Austria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E2_Temporal_Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E2_Temporal_Entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E39_Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E39_Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E77_Persistent_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E4_Period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E4_Period">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E2_Temporal_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E5_Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E5_Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E4_Period"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E74_Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E74_Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E39_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E77_Persistent_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E77_Persistent_Item"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E7_Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E7_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E5_Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E92_Spacetime_Volume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E92_Spacetime_Volume"/>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E93_Spacetime_Snapshot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E93_Spacetime_Snapshot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E92_Spacetime_Volume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#France -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#France">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Germany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Germany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Great_Britain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Great_Britain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Social_group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Social_group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Social_group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E74_Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#The_occupation_of_post-war_germany_1945 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#The_occupation_of_post-war_germany_1945">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E93_Spacetime_Snapshot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#The_soviet_Union -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#The_soviet_Union">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Unit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#World_War_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#World_War_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#war"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#World_War_II -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#World_War_II">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#war"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#political_unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#political_unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#political_unit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#war -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#war">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E5_Event"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
