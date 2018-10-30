@@ -95,14 +95,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#France -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#France">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Germany -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Germany">
@@ -167,14 +159,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#World_War_II -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#World_War_II">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#war"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country">
@@ -187,6 +171,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#political_unit">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#pølser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#pølser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E74_Group"/>
     </owl:Class>
     
 
