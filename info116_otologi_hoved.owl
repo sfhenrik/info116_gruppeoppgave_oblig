@@ -111,6 +111,7 @@
     
 
 
+<<<<<<< HEAD
     <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Organization -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Organization">
@@ -120,6 +121,9 @@
 
 
     <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Social_group -->
+=======
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Germany -->
+>>>>>>> bbb3c8524d17436b108754b42a0525f32e4c997b
 
     <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Social_group">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E74_Group"/>
@@ -186,6 +190,7 @@
     
 
 
+<<<<<<< HEAD
     <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#France -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#France">
@@ -195,6 +200,9 @@
 
 
     <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Germany -->
+=======
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country -->
+>>>>>>> bbb3c8524d17436b108754b42a0525f32e4c997b
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Germany">
         <rdf:type rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country"/>
@@ -210,7 +218,19 @@
     
 
 
+<<<<<<< HEAD
     <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Japan -->
+=======
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#pølser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#pølser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#E74_Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#war -->
+>>>>>>> bbb3c8524d17436b108754b42a0525f32e4c997b
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#Japan">
         <rdf:type rdf:resource="http://www.semanticweb.org/henrik/ontologies/2018/9/untitled-ontology-8#country"/>
